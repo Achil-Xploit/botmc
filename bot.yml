@@ -1,0 +1,27 @@
+name: Minecraft Bot
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@latest
+
+      - name: Install Node.js
+        uses: actions/setup-node@latest
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+          npm install mineflayer
+
+      - name: Run bot
+        run: |
+          node bot.js
+          

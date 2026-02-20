@@ -1,13 +1,12 @@
 {
-  "name": "botmc",
+  "name": "minecraft-bot",
   "version": "1.0.0",
   "description": "Bot Minecraft",
-  "main": "bot.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "mineflayer": "^4.10.0"
+    "mineflayer": "^4.8.1"
   }
 }
-
